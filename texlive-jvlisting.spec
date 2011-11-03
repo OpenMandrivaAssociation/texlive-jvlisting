@@ -1,3 +1,9 @@
+# revision 24430
+# category Package
+# catalog-ctan /macros/latex/contrib/jvlisting
+# catalog-date 2011-10-28 21:00:38 +0200
+# catalog-license lppl
+# catalog-version 0.6
 Name:		texlive-jvlisting
 Version:	0.6
 Release:	1
@@ -52,6 +58,7 @@ customised and extended.
 #- source
 %doc %{_texmfdistdir}/source/latex/jvlisting/jvlisting.dtx
 %doc %{_texmfdistdir}/source/latex/jvlisting/jvlisting.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -62,3 +69,5 @@ customised and extended.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
