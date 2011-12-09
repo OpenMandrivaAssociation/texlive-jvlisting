@@ -1,11 +1,11 @@
-# revision 24430
+# revision 24638
 # category Package
 # catalog-ctan /macros/latex/contrib/jvlisting
-# catalog-date 2011-10-28 21:00:38 +0200
+# catalog-date 2011-11-18 01:15:46 +0100
 # catalog-license lppl
-# catalog-version 0.6
+# catalog-version 0.7
 Name:		texlive-jvlisting
-Version:	0.6
+Version:	0.7
 Release:	1
 Summary:	A replacement for LaTeX's verbatim package
 Group:		Publishing
@@ -18,9 +18,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
-Conflicts:	texlive-source <= 20110705-3
 
 %description
 This package provides a LaTeX environment listing, an
@@ -34,19 +31,19 @@ document source, and; - listing environments may easily be
 customised and extended.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
