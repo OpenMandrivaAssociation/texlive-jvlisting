@@ -30,16 +30,8 @@ and program listing can be indented with the rest of the
 document source, and; - listing environments may easily be
 customised and extended.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -56,7 +48,6 @@ customised and extended.
 #- source
 %doc %{_texmfdistdir}/source/latex/jvlisting/jvlisting.dtx
 %doc %{_texmfdistdir}/source/latex/jvlisting/jvlisting.ins
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -67,5 +58,3 @@ customised and extended.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
