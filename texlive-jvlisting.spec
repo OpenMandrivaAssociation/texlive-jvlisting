@@ -58,3 +58,21 @@ customised and extended.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.7-2
++ Revision: 752941
+- Rebuild to reduce used resources
+
+* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.7-1
++ Revision: 739795
+- texlive-jvlisting
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.6-1
++ Revision: 718765
+- texlive-jvlisting
+- texlive-jvlisting
+- texlive-jvlisting
+- texlive-jvlisting
+
