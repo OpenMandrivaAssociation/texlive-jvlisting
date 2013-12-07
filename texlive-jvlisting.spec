@@ -6,7 +6,7 @@
 # catalog-version 0.7
 Name:		texlive-jvlisting
 Version:	0.7
-Release:	4
+Release:	5
 Summary:	A replacement for LaTeX's verbatim package
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/jvlisting
