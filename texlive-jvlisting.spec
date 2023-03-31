@@ -1,6 +1,6 @@
 Name:		texlive-jvlisting
 Version:	24638
-Release:	1
+Release:	2
 Summary:	A replacement for LaTeX's verbatim package
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/jvlisting
