@@ -3,7 +3,7 @@ Version:	24638
 Release:	2
 Summary:	A replacement for LaTeX's verbatim package
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/jvlisting
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/jvlisting
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jvlisting.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jvlisting.doc.r%{version}.tar.xz
